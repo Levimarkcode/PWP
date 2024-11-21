@@ -57,8 +57,15 @@ public class IncomeInputActivity extends AppCompatActivity {
 
         if (key != null) {
             databaseReference.child(key).setValue(incomeData)
-                    .addOnSuccessListener(unused -> Toast.makeText(this, "Income added successfully!", Toast.LENGTH_SHORT).show())
-                    .addOnFailureListener(e -> Toast.makeText(this, "Failed to add income: " + e.getMessage(), Toast.LENGTH_SHORT).show());
+                    .addOnSuccessListener(unused -> {
+                        Toast.makeText(this, "Income added successfully!", Toast.LENGTH_SHORT).show();
+                        // Close the current activity and return to the previous one
+                        finish();  // This will return to the previous screen (or refresh the previous activity)
+                    })
+                    .addOnFailureListener(e -> {
+                        Toast.makeText(this, "Failed to add income: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    });
         }
     }
 }
+
