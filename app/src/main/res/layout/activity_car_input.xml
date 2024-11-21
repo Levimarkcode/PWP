@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/car_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="18dp">
+
+    <!-- Card View -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_incometext">
+
+        <LinearLayout
+            android:layout_width="349dp"
+            android:layout_height="344dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/addtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD"
+                android:textAlignment="center"
+                android:textColor="@color/expense"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <!-- Amount Input Section -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ksh"
+                    android:textSize="18sp"
+                    android:textColor="@color/expense"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:id="@+id/amountEditText"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="36sp"
+                    android:textColor="#8692f7"/>
+            </LinearLayout>
+
+            <!-- Note Input -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Note"
+                android:id="@+id/noteEditText"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:textColor="#8692f7"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/car_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/expense"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+</LinearLayout>

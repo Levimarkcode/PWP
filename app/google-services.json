@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "118366100181",
+    "project_id": "pennywise-92e42",
+    "storage_bucket": "pennywise-92e42.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118366100181:android:e7d85aa1186ce1f602e05c",
+        "android_client_info": {
+          "package_name": "com.example.pwp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118366100181-m4rrf3icvg78ahbnpq55ds0hub644uuf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbRVvu63Da6jmLxxcZzm-iX8yRpetLdj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118366100181-m4rrf3icvg78ahbnpq55ds0hub644uuf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
