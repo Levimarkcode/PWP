@@ -185,4 +185,18 @@
         android:src="@drawable/baseline_home_24"
         android:layout_centerHorizontal="true" />
 
+
+
+    <!-- Current Balance Display -->
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Current Balance: $0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
 </RelativeLayout>
